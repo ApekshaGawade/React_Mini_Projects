@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color:#f1f5f8;
+}
+.section
+{
+  width: 65vw;
+  margin: 5rem auto;
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+h1,h2{
+  text-align: center;
+  font-size:2.8em;
+  color:#102a42;
+  font-weight:500;
+  margin:0;
+}
+.underline {
+  background: #2caeba;
+  width: 5rem;
+  height: 0.25rem;
+  margin:0 auto;
+}
+.jobs-center {
+  margin:3rem auto;
+  display:grid;
+  grid-template-columns:10rem 1fr;
+  gap:20px;
+}
+.job-desc
+{
+  display:grid;
+  grid-template-columns: auto 1fr;
+  align-items:center;
+  gap:0 2rem;
+  text-align:justify;
+}
+.job-icon {
+  color: #2caeba;
+}
+.job-info h4{
+  color: #617d98;
+  background-color: #dae2ec;
+  padding:2px 5px;
+  margin:0;
+  display:inline-block;
+  border-radius: 0.25rem;
+}
+.job-date{
+  color: #617d98;
+  margin-bottom:0;
+}
+h3{
+  font-weight: normal;
+  font-size: 1.8rem;
+  margin:0 0 1rem 0;
+  color: #324d67;
+}
+.job-desc p
+{
+  color: #324d67;
+}
+.btn-container button {
+  background: transparent;
+  border:transparent;
+  font-size:1.3rem;
+  margin:0.6rem 0 1rem 0;
+  cursor: pointer;
+}
+.active-btn,.btn-container button:hover
+{
+  color:#2caeba;
+  box-shadow:-2px 0 #2caeba;
+  transition: all 0.2s linear;
+}
+.info{
+  background-color: #2caeba;
+  color:white;
+  border-radius: 0.25rem;
+  border:2px solid #2caeba;
+  padding:0.5rem 4rem;
+  font-size:1rem;
+  font-weight: bold;
+  margin: 1.5rem 20%;
+}
+@media (max-width:1000px)
+{
+  .section{
+    width:75vw;
+  }
+  .jobs-center
+  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .active-btn,.btn-container button:hover
+{
+  color:#2caeba;
+  box-shadow:0 1px #2caeba;
+  transition: all 0.2s linear;
+}
+h1,h2{
+  font-size: 1.5rem;
+}
+.btn-container button,h3
+{
+  font-size: 1rem;
+}
+.job-info,.info
+{
+  font-size:0.8em;
+}
+.info
+{
+  padding:1em 2em;
+  margin-top:0;
+}
+}
